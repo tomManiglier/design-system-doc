@@ -1,114 +1,35 @@
-:root {
-  color-scheme: light;
-}
+// Les tokens et le reset viennent de '@tom/design-system/styles.css' (importé dans main.ts) :
+// pas de @use 'tokens' / @use 'base/reset' ici, on ne garde que ce qui est propre au site de doc.
+@use 'base/docs';
 
 body {
-  margin: 0;
-  font-family: Inter, Arial, sans-serif;
-  background: #f4f6f8;
-  color: #13202b;
+  font-family: var(--font-body);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-code,
-pre {
-  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
 }
 
-.page-shell {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 40px 20px 80px;
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: var(--weight-bold);
 }
 
-.hero {
-  margin-bottom: 32px;
+h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: -0.03em;
 }
 
-.hero__eyebrow {
-  margin: 0 0 8px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #2f6fed;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 1;
-}
-
-.hero__copy {
-  max-width: 680px;
-  margin: 16px 0 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #51606f;
-}
-
-.layout {
-  display: grid;
-  gap: 24px;
-}
-
-.panel {
-  padding: 24px;
-  background: #ffffff;
-  border: 1px solid #d9e0e7;
-  border-radius: 24px;
-  box-shadow: 0 12px 32px rgba(10, 22, 35, 0.06);
-}
-
-.panel__header {
-  margin-bottom: 20px;
-}
-
-.panel__header h2 {
-  margin: 0;
-  font-size: 1.35rem;
-}
-
-.panel__header p {
-  margin: 8px 0 0;
-  color: #51606f;
-}
-
-.demo-stack {
-  display: grid;
-  gap: 18px;
-}
-
-.demo-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-}
-
-.panel--code pre {
-  margin: 0;
-  padding: 18px;
-  overflow-x: auto;
-  color: #e6edf3;
-  background: #0d1621;
-  border-radius: 18px;
-}
-
-ds-tabs,
-ds-accordion,
-ds-chart,
-ds-table {
-  display: block;
-}
-
-@media (max-width: 640px) {
-  .page-shell {
-    padding: 24px 16px 56px;
-  }
-
-  .panel {
-    padding: 18px;
-    border-radius: 18px;
-  }
+p {
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  text-wrap: balance;
 }

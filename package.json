@@ -2,25 +2,34 @@
   "name": "design-system-docs",
   "private": true,
   "version": "0.1.0",
-  "description": "Documentation statique consommant @tom/design-system comme un client externe.",
+  "description": "Site de documentation du design system, consommant @tom/design-system comme un client externe.",
   "scripts": {
-    "dev": "webpack serve --config webpack.config.cjs --mode development",
-    "build": "tsc --noEmit && webpack --config webpack.config.cjs --mode production",
+    "dev": "webpack serve --mode development",
+    "build": "webpack build --mode production",
+    "typecheck": "vue-tsc --noEmit",
     "serve": "node server.js"
   },
   "dependencies": {
-    "@tom/design-system": "file:./tom-design-system-0.1.0.tgz"
+    "@fontsource/quicksand": "^5.2.10",
+    "@fontsource/roboto": "^5.2.10",
+    "@tom/design-system": "file:./tom-design-system-0.1.0.tgz",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "sass": "^1.83.0",
     "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.6.2",
     "typescript": "^5.9.3",
+    "vue-loader": "^17.4.2",
+    "vue-tsc": "^3.3.7",
     "webpack": "^5.108.0",
     "webpack-cli": "^7.0.0",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
   }
 }

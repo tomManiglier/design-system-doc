@@ -13,16 +13,7 @@ const contentTypes = {
   '.map': 'application/json; charset=utf-8',
 };
 
-const server = http.createServer((request, response) => {
-  const requestPath = request.url === '/' ? '/index.html' : request.url;
-  const filePath = path.join(distDir, requestPath);
-
-  if (!filePath.startsWith(distDir)) {
-    response.writeHead(403);
-    response.end('Forbidden');
-    return;
-  }
-
+function serveFile(filePath, response) {
   fs.readFile(filePath, (error, content) => {
     if (error) {
       response.writeHead(error.code === 'ENOENT' ? 404 : 500);
@@ -34,6 +25,27 @@ const server = http.createServer((request, response) => {
       'Content-Type': contentTypes[path.extname(filePath)] || 'application/octet-stream',
     });
     response.end(content);
+  });
+}
+
+const server = http.createServer((request, response) => {
+  const requestPath = request.url === '/' ? '/index.html' : request.url;
+  const filePath = path.join(distDir, requestPath);
+
+  if (!filePath.startsWith(distDir)) {
+    response.writeHead(403);
+    response.end('Forbidden');
+    return;
+  }
+
+  // vue-router en mode history : toute route inconnue côté serveur doit
+  // retomber sur index.html pour laisser le routeur client la gérer.
+  fs.access(filePath, fs.constants.F_OK, (error) => {
+    if (error) {
+      serveFile(path.join(distDir, 'index.html'), response);
+      return;
+    }
+    serveFile(filePath, response);
   });
 });
 

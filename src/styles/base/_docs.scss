@@ -1,0 +1,208 @@
+// Styles globaux des pages de documentation.
+// Le contenu slotté des pages de doc n'est pas atteint par le scoped CSS,
+// on centralise donc ici la typographie et la structure des docs.
+
+.doc {
+  max-width: 780px;
+}
+
+.doc__header {
+  margin-bottom: 40px;
+}
+
+.doc__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 10px;
+}
+
+.doc__header h1 {
+  font-size: var(--text-2xl);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.doc__title {
+  margin: 0 0 12px;
+}
+
+.doc__desc {
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  color: var(--color-muted-foreground);
+  margin: 0;
+}
+
+.doc-section {
+  margin-top: 48px;
+}
+
+.doc-section > h2 {
+  font-family: var(--font-title);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
+  margin: 0 0 8px;
+}
+
+.doc-section > h3 {
+  font-family: var(--font-title);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-lg);
+  margin: 24px 0 8px;
+}
+
+.doc-section > p {
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-foreground);
+  margin: 0 0 20px;
+}
+
+// Code inline dans le corps des docs
+.doc :not(pre) > code {
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85em;
+  background: var(--color-muted);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+// Listes structurées dans les sections (États, Accessibilité, règles d'usage)
+.doc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+.doc-list > li {
+  padding-left: 18px;
+  position: relative;
+}
+
+.doc-list > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  background: var(--color-muted-foreground);
+}
+
+// Tableau simple pour les états d'un composant
+.doc-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.doc-table th,
+.doc-table td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.doc-table th {
+  font-weight: var(--weight-medium);
+  color: var(--color-muted-foreground);
+  background: var(--color-muted);
+}
+
+.doc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+// Blocs Bon / Mauvais pour les guidelines de contenu
+.doc-compare {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .doc-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+.doc-good,
+.doc-bad {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.doc-good {
+  border-left: 3px solid #2e7d32;
+}
+
+.doc-bad {
+  border-left: 3px solid #b3261e;
+}
+
+.doc-good > strong,
+.doc-bad > strong {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.doc-good > strong {
+  color: #2e7d32;
+}
+
+.doc-bad > strong {
+  color: #b3261e;
+}
+
+// Lien interne standard dans le corps des docs - même traitement que BaseButton variant="link"
+// display: inline (pas inline-block) pour que le soulignement colle au texte quel que soit le
+// line-height du paragraphe parent - un inline-block hérite du line-height ambiant et décale la
+// position de bottom d'autant, ce qui écarte la barre du texte dans les contextes plus aérés.
+.doc-link {
+  position: relative;
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
