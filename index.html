@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System Docs</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="hero__eyebrow">Documentation</p>
+        <h1>Design system</h1>
+        <p class="hero__copy">
+          Démonstration d'un site externe qui consomme <code>@tom/design-system</code>
+          uniquement via son package npm publié.
+        </p>
+      </header>
+
+      <main class="layout">
+        <section class="panel">
+          <div class="panel__header">
+            <h2>Composants simples</h2>
+            <p>Utilisation directe en HTML avec custom elements.</p>
+          </div>
+
+          <div class="demo-stack">
+            <div class="demo-row">
+              <ds-button variant="primary">Action principale</ds-button>
+              <ds-button variant="outline">Secondaire</ds-button>
+              <ds-button variant="gradient">Gradient</ds-button>
+            </div>
+
+            <div class="demo-row">
+              <ds-badge variant="default">Stable</ds-badge>
+              <ds-badge variant="outline">Twig</ds-badge>
+              <ds-spinner size="20"></ds-spinner>
+            </div>
+
+            <ds-alert variant="info" title="Intégration externe">
+              Cette page charge la bibliothèque comme le ferait un autre site.
+            </ds-alert>
+
+            <ds-progress value="64"></ds-progress>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__header">
+            <h2>Composants pilotés par TypeScript</h2>
+            <p>Les props structurées sont assignées depuis le code, pas via HTML brut.</p>
+          </div>
+
+          <div class="demo-stack">
+            <ds-tabs id="tabs-demo"></ds-tabs>
+            <ds-accordion id="accordion-demo"></ds-accordion>
+            <ds-chart id="chart-demo"></ds-chart>
+            <ds-table id="table-demo"></ds-table>
+          </div>
+        </section>
+
+        <section class="panel panel--code">
+          <div class="panel__header">
+            <h2>Entrée côté client</h2>
+            <p>Ce dépôt docs n'importe que l'API publique du package.</p>
+          </div>
+
+          <pre><code>import '@tom/design-system/styles.css';
+import '@tom/design-system/register';</code></pre>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/main.js"></script>
+  </body>
+  </html>
