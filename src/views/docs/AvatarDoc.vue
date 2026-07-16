@@ -67,7 +67,7 @@
         <li><strong>Image</strong> - renseigner <code>alt</code> avec le nom de la personne, ou une chaîne vide si le nom est déjà écrit à côté (éviter la double lecture).</li>
         <li><strong>Initiales</strong> - décoratives : elles doublent un nom qui doit être présent dans le contexte.</li>
         <li><strong>Jamais seul porteur d'identité</strong> - dans une liste, le nom en texte accompagne l'avatar (voir <router-link class="doc-link" to="/docs/item">Item</router-link>).</li>
-        <li><strong>Contraste</strong> - les initiales sont en blanc sur le dégradé de marque : ne pas remplacer ce fond par une couleur claire.</li>
+        <li><strong>Contraste</strong> - les initiales sont en texte foncé sur le dégradé de marque, entièrement pastel : ne pas remplacer ce fond par une couleur foncée.</li>
       </ul>
     </section>
 

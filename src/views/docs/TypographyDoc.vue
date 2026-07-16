@@ -121,8 +121,8 @@
                 <td>Accent, liens, focus</td>
               </tr>
               <tr>
-                <td>Bleu foncé</td>
-                <td>#08113B</td>
+                <td>Indigo</td>
+                <td>#2A1442</td>
                 <td>Survols, contrastes</td>
               </tr>
               <tr>

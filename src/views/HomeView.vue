@@ -188,8 +188,9 @@ const breadcrumbItems: BreadcrumbItem[] = [
 ];
 
 const homeColors = [
+  { name: 'Ciel', hex: '#a7e3dd', light: true },
   { name: 'Rose', hex: '#fadadd', light: true },
-  { name: 'Bleu foncé', hex: '#08113b', light: false },
+  { name: 'Indigo', hex: '#2a1442', light: false },
   { name: 'Anthracite', hex: '#333333', light: false },
   { name: 'Violet', hex: '#3b1e54', light: false },
   { name: 'Orange', hex: '#ff7e5f', light: false },

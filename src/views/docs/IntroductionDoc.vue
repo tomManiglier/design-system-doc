@@ -14,7 +14,7 @@
       </p>
       <p>
         Le style reste sobre : des composants simples et lisibles, avec deux touches de marque -
-        le dégradé rose&nbsp;→&nbsp;violet et le cercle dégradé.
+        le dégradé ciel&nbsp;→&nbsp;rose et le cercle dégradé.
       </p>
     </section>
 

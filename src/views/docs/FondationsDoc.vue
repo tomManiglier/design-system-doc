@@ -39,17 +39,17 @@
 
     <section class="doc-section">
       <h2>Dégradés signature</h2>
-      <p>Le dégradé signature (rose → violet) et le dégradé froid (rose → bleu foncé).</p>
+      <p>Le dégradé signature, façon lever de soleil (ciel → pêche → corail → rose), et sa variante froide, plus sobre (ciel → rose).</p>
       <div class="gradients">
         <div class="gradients__item">
           <span class="gradients__block" style="background: var(--gradient-brand)" />
           <span class="palette__name">Signature</span>
-          <code>45° · #fadadd → #3b1e54</code>
+          <code>45° · #a7e3dd → #ffdab9 → #ff7e5f → #fadadd</code>
         </div>
         <div class="gradients__item">
           <span class="gradients__block" style="background: var(--gradient-brand-cool)" />
           <span class="palette__name">Froid</span>
-          <code>45° · #fadadd → #08113b</code>
+          <code>45° · #a7e3dd → #fadadd</code>
         </div>
       </div>
     </section>
@@ -157,7 +157,7 @@
         <li>Texte courant : ratio <strong>4.5:1</strong> minimum.</li>
         <li>Texte large (≥ 24px, ou ≥ 18.5px gras) : ratio <strong>3:1</strong> minimum.</li>
         <li>Bordures de champ, focus, icônes porteuses de sens : ratio <strong>3:1</strong> minimum contre le fond.</li>
-        <li>L'orange <code>#FF7E5F</code> et la pêche <code>#FFDAB9</code> ne s'utilisent jamais en texte fin sur fond clair : seulement en aplat décoratif, avec du texte foncé dessus.</li>
+        <li>Les couleurs pastel (ciel, orange, pêche, rose) ne s'utilisent jamais en texte fin sur fond clair : seulement en aplat décoratif, avec du texte foncé dessus.</li>
       </ul>
       <p>
         Voir aussi <router-link class="doc-link" to="/docs/spacing">Espacement</router-link>,
@@ -173,8 +173,9 @@ import DocPage from '../../components/docs/DocPage.vue';
 import ColorCard from '../../components/docs/ColorCard.vue';
 
 const principales = [
+  { name: 'Ciel', hex: '#A7E3DD' },
   { name: 'Rose', hex: '#FADADD' },
-  { name: 'Bleu foncé', hex: '#08113B' },
+  { name: 'Indigo', hex: '#2A1442' },
   { name: 'Anthracite', hex: '#333333' },
 ];
 

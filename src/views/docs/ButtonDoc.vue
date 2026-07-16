@@ -21,7 +21,7 @@
       <h2>Couleur de la marque</h2>
       <p>
         <code>brand</code> reprend le rose de la marque, <code>gradient</code> applique le
-        dégradé signature rose → violet.
+        dégradé signature ciel → pêche → corail → rose.
       </p>
       <DemoBlock :code="brandCode">
         <BaseButton variant="brand">Brand</BaseButton>
