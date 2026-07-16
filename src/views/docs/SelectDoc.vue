@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Select"
     description="Liste déroulante native, stylée aux couleurs de la marque, pour un choix unique."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

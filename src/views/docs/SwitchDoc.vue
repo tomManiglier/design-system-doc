@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Switch"
     description="Bascule un réglage entre deux états. Accessible au clavier et compatible v-model."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

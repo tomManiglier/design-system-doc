@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Sidebar"
     description="Navigation latérale par groupes, avec entrée active mise en avant."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

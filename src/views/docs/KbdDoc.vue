@@ -3,7 +3,6 @@
     eyebrow="Utilitaires"
     title="Kbd"
     description="Représente une touche ou un raccourci clavier."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Badge"
     description="Petite étiquette pour signaler un statut, une catégorie ou une valeur courte."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Variantes</h2>

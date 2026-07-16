@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="Scroll Area"
     description="Zone défilante à hauteur fixe, avec fondu progressif en haut et en bas."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

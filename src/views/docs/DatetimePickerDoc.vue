@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="DateTime Picker"
     description="Sélection combinée d'une date et d'une heure dans un panneau déroulant."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

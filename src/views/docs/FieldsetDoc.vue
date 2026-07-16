@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Fieldset"
     description="Regroupe des champs liés sous une légende commune."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

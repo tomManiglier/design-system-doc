@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Skeleton"
     description="Placeholder animé affiché pendant le chargement du contenu."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

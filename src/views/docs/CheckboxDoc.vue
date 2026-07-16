@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Checkbox"
     description="Case à cocher pour un choix binaire ou une sélection multiple."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

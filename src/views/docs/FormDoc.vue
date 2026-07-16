@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Form"
     description="Conteneur de formulaire : espacement vertical cohérent et soumission interceptée."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

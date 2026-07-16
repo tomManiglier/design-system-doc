@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Radio Group"
     description="Groupe de boutons radio pour un choix unique parmi plusieurs options."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

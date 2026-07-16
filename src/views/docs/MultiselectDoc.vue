@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Multiselect"
     description="Sélection multiple dans une liste déroulante, avec cases à cocher."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

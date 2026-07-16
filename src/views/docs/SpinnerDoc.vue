@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Spinner"
     description="Indicateur de chargement circulaire pour les actions en cours."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

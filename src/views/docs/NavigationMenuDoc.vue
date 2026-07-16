@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Navigation Menu"
     description="Barre de navigation avec panneaux déroulants pour organiser des liens riches."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

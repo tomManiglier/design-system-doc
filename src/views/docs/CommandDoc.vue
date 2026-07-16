@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Command"
     description="Palette de commandes globale : recherche instantanée dans toute la documentation."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

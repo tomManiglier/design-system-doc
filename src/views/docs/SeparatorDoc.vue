@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Separator"
     description="Trait fin pour séparer visuellement des groupes de contenu, en horizontal ou vertical."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Horizontal</h2>

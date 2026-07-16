@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Breadcrumb"
     description="Fil d'Ariane indiquant la position de la page courante dans la hiérarchie du site."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

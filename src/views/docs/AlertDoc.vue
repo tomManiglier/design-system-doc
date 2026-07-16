@@ -3,7 +3,6 @@
     eyebrow="Feedback"
     title="Alert"
     description="Message contextuel pour informer, confirmer ou alerter l'utilisateur."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Variantes</h2>

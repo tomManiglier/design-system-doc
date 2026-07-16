@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="Table"
     description="Tableau de données avec en-têtes, lignes survolables et légende optionnelle."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

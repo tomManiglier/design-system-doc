@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="Meter"
     description="Mesure statique d'une valeur dans une plage connue : quota, capacité, stock."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

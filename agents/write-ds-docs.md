@@ -34,7 +34,6 @@ Une page `*Doc.vue` (ou les sections demandées) suivant la structure standard, 
 - Le code des exemples compile réellement.
 - Français, conventions de nommage du système, règles éditoriales (pas de point final aux
   titres, casse en phrase normale).
-- Statut : `draft` ou `beta` pour une nouvelle page - jamais `stable` d'emblée.
 - Liens croisés vers les fondations et patterns pertinents.
 
 ## Validation

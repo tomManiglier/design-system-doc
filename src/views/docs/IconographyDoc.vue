@@ -3,7 +3,6 @@
     eyebrow="Fondations"
     title="Iconographie"
     description="Un seul style de trait, des tailles fixes et des règles d'accompagnement pour que les icônes soutiennent le texte sans le remplacer."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Style</h2>

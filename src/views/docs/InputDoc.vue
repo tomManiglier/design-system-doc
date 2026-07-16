@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Input"
     description="Champ de saisie sur une ligne, compatible v-model, avec focus ring aux couleurs de la marque."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

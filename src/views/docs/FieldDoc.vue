@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Field"
     description="Associe un label, un contrôle et un texte d'aide ou d'erreur."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

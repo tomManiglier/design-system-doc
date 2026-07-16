@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Avatar"
     description="Représente un utilisateur par une image ou ses initiales, avec un repli en dégradé de marque."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

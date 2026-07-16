@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="Chart"
     description="Graphiques SVG légers aux couleurs de la marque : barres ou courbe."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Barres</h2>

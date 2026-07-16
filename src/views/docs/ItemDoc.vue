@@ -3,7 +3,6 @@
     eyebrow="Utilitaires"
     title="Item"
     description="Ligne de liste générique : média, titre, description et actions."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

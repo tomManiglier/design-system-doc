@@ -4,7 +4,7 @@ Site de documentation du design system `@tommaniglier/design-system-lib`, avec r
 
 - **Démarrer** — introduction, getting started, contribution, changelog.
 - **Fondations** — couleurs, typographie, espacement, grille & layout, bordures & ombres, iconographie, motion.
-- **Composants** — une page par composant : variantes, démos live, états, accessibilité, table de props, statut (`draft` / `beta` / `stable` / `deprecated`).
+- **Composants** — une page par composant : variantes, démos live, états, accessibilité, table de props.
 - **Patterns** (`/patterns`) — 6 assemblages réels : formulaire, recherche & filtres, tableau riche, états vides, états d'erreur, notifications & feedback.
 - **Agents** (`/agents`) — contrat commun, agents de construction et de migration, catalogue et cas de test (définitions dans [`agents/`](agents/)).
 

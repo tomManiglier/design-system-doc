@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Textarea"
     description="Champ de saisie multiligne, compatible v-model, avec hauteur redimensionnable."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

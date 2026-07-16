@@ -3,7 +3,6 @@
     eyebrow="Utilitaires"
     title="Drawer"
     description="Panneau latéral coulissant depuis la droite, avec voile et fermeture au clavier."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

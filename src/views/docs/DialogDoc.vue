@@ -3,7 +3,6 @@
     eyebrow="Feedback"
     title="Dialog"
     description="Fenêtre modale superposée pour une action ou une information nécessitant l'attention. Fermeture au clic sur le fond ou via Échap."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

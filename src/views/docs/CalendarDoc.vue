@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="Calendar"
     description="Calendrier mensuel : sélection de date, navigation entre mois, aujourd'hui mis en avant."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

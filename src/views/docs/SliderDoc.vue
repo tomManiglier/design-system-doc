@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Slider"
     description="Sélection d'une valeur numérique sur une plage continue."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

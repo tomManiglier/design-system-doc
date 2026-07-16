@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Tabs"
     description="Bascule entre plusieurs vues d'un même contexte via des onglets."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

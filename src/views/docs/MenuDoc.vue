@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Menu"
     description="Menu déroulant contextuel : actions, séparateurs et actions destructrices."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

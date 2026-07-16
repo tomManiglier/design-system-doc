@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Card"
     description="Conteneur pour regrouper un contenu et ses actions, avec en-tête et pied optionnels."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

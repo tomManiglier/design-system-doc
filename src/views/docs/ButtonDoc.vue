@@ -3,7 +3,6 @@
     eyebrow="Formulaires"
     title="Button"
     description="Déclenche une action. Trois variantes pour hiérarchiser les actions d'une interface."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Variantes</h2>

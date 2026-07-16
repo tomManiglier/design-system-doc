@@ -3,7 +3,6 @@
     eyebrow="Données"
     title="Carousel"
     description="Diaporama horizontal avec défilement fluide, flèches et points de navigation."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

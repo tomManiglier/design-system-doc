@@ -3,7 +3,6 @@
     eyebrow="Affichage"
     title="Progress"
     description="Barre de progression déterminée, remplie du dégradé de marque."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

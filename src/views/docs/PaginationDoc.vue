@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Pagination"
     description="Navigation entre pages avec raccourcis précédent/suivant et ellipses."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

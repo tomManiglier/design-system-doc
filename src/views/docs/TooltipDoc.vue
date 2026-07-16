@@ -3,7 +3,6 @@
     eyebrow="Feedback"
     title="Tooltip"
     description="Info-bulle révélée au survol ou au focus pour apporter un complément d'information."
-    status="beta"
   >
     <section class="doc-section">
       <h2>Exemple</h2>

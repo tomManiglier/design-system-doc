@@ -2,7 +2,7 @@
   <DocPage
     eyebrow="Démarrer"
     title="Contribution"
-    description="Comment enrichir la bibliothèque et sa documentation : conventions de nommage, statuts, structure d'une page composant."
+    description="Comment enrichir la bibliothèque et sa documentation : conventions de nommage, structure d'une page composant."
   >
     <section class="doc-section">
       <h2>Deux dépôts</h2>
@@ -34,31 +34,12 @@
     </section>
 
     <section class="doc-section">
-      <h2>Statuts de composants</h2>
-      <p>Chaque page composant affiche un statut à côté de son titre :</p>
-      <div class="doc-table-wrap">
-        <table class="doc-table">
-          <thead>
-            <tr><th>Statut</th><th>Signification</th><th>Engagement</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Draft</strong></td><td>En cours de conception, API instable.</td><td>Ne pas utiliser en production.</td></tr>
-            <tr><td><strong>Beta</strong></td><td>Utilisable, API susceptible d'évoluer.</td><td>Changements signalés dans le changelog.</td></tr>
-            <tr><td><strong>Stable</strong></td><td>API garantie.</td><td>Toute rupture passe par une dépréciation.</td></tr>
-            <tr><td><strong>Deprecated</strong></td><td>Remplacé ou abandonné.</td><td>Alternative indiquée sur la page.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="doc-section">
       <h2>Ajouter un composant</h2>
       <ul class="doc-list">
         <li>1. Créer <code>BaseX.vue</code> dans <code>lib/src/components/ui/</code>, avec seulement des styles à base de tokens, un focus visible et les bons rôles ARIA.</li>
         <li>2. L'ajouter dans <code>registry.ts</code> (custom element) et <code>vue.ts</code> (export Vue), par ordre alphabétique.</li>
         <li>3. Reconstruire la lib, puis créer la page <code>XDoc.vue</code> côté doc.</li>
         <li>4. Ajouter la route dans <code>router/index.ts</code> et l'entrée dans <code>components/docs/nav.ts</code>.</li>
-        <li>5. Commencer en statut <code>draft</code> ou <code>beta</code>, jamais <code>stable</code> dès le départ.</li>
       </ul>
     </section>
 
