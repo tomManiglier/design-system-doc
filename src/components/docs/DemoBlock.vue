@@ -35,7 +35,6 @@ function copy() {
 .demo {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  overflow: hidden;
 }
 
 .demo__preview {
@@ -56,6 +55,8 @@ function copy() {
   position: relative;
   border-top: 1px solid var(--color-border);
   background: var(--color-muted);
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .demo__code pre {
