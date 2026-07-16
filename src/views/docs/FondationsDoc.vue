@@ -44,12 +44,12 @@
         <div class="gradients__item">
           <span class="gradients__block" style="background: var(--gradient-brand)" />
           <span class="palette__name">Signature</span>
-          <code>45° · #f7a8c4 → #6b3fa0</code>
+          <code>45° · #fadadd → #3b1e54</code>
         </div>
         <div class="gradients__item">
           <span class="gradients__block" style="background: var(--gradient-brand-cool)" />
           <span class="palette__name">Froid</span>
-          <code>45° · #f7a8c4 → #2b3572</code>
+          <code>45° · #fadadd → #08113b</code>
         </div>
       </div>
     </section>
@@ -112,7 +112,7 @@
             </tr>
             <tr>
               <td><code>--color-foreground</code></td>
-              <td>#4A4A49</td>
+              <td>#333333</td>
               <td>#EDEDEC</td>
               <td>Texte principal, icônes actives.</td>
             </tr>
@@ -136,14 +136,14 @@
             </tr>
             <tr>
               <td><code>--color-accent</code></td>
-              <td>#F7A8C4</td>
-              <td>#F7A8C4</td>
+              <td>#FADADD</td>
+              <td>#FADADD</td>
               <td>Accent de marque : liens, éléments actifs, focus.</td>
             </tr>
             <tr>
               <td><code>--color-ring</code></td>
-              <td>#F7A8C4</td>
-              <td>#F7A8C4</td>
+              <td>#FADADD</td>
+              <td>#FADADD</td>
               <td>Anneau de focus clavier, via <code>outline</code>.</td>
             </tr>
           </tbody>
@@ -157,7 +157,7 @@
         <li>Texte courant : ratio <strong>4.5:1</strong> minimum.</li>
         <li>Texte large (≥ 24px, ou ≥ 18.5px gras) : ratio <strong>3:1</strong> minimum.</li>
         <li>Bordures de champ, focus, icônes porteuses de sens : ratio <strong>3:1</strong> minimum contre le fond.</li>
-        <li>L'orange <code>#FB7A3C</code> ne s'utilise jamais en texte fin sur fond clair : seulement en aplat décoratif, avec du texte foncé dessus.</li>
+        <li>L'orange <code>#FF7E5F</code> et la pêche <code>#FFDAB9</code> ne s'utilisent jamais en texte fin sur fond clair : seulement en aplat décoratif, avec du texte foncé dessus.</li>
       </ul>
       <p>
         Voir aussi <router-link class="doc-link" to="/docs/spacing">Espacement</router-link>,
@@ -173,14 +173,15 @@ import DocPage from '../../components/docs/DocPage.vue';
 import ColorCard from '../../components/docs/ColorCard.vue';
 
 const principales = [
-  { name: 'Rose', hex: '#F7A8C4' },
-  { name: 'Bleu foncé', hex: '#2B3572' },
-  { name: 'Anthracite', hex: '#4A4A49' },
+  { name: 'Rose', hex: '#FADADD' },
+  { name: 'Bleu foncé', hex: '#08113B' },
+  { name: 'Anthracite', hex: '#333333' },
 ];
 
 const secondaires = [
-  { name: 'Violet', hex: '#6B3FA0' },
-  { name: 'Orange', hex: '#FB7A3C' },
+  { name: 'Violet', hex: '#3B1E54' },
+  { name: 'Orange', hex: '#FF7E5F' },
+  { name: 'Pêche', hex: '#FFDAB9' },
 ];
 
 const neutres = [

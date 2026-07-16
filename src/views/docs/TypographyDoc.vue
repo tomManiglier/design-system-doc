@@ -117,12 +117,12 @@
             <tbody>
               <tr>
                 <td>Rose</td>
-                <td>#F7A8C4</td>
+                <td>#FADADD</td>
                 <td>Accent, liens, focus</td>
               </tr>
               <tr>
                 <td>Bleu foncé</td>
-                <td>#2B3572</td>
+                <td>#08113B</td>
                 <td>Survols, contrastes</td>
               </tr>
               <tr>
