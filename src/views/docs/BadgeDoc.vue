@@ -17,8 +17,8 @@
       <h2>Couleur personnalisée</h2>
       <p>La prop <code>color</code> accepte n'importe quelle couleur : fond teinté, texte et bordure assortis.</p>
       <DemoBlock :code="colorCode">
-        <BaseBadge color="#009adf">Bleu</BaseBadge>
-        <BaseBadge color="#7c2c7e">Violet</BaseBadge>
+        <BaseBadge color="#f0669a">Rose</BaseBadge>
+        <BaseBadge color="#9061f0">Violet</BaseBadge>
         <BaseBadge color="#1a7f45">Succès</BaseBadge>
         <BaseBadge color="#b3261e">Erreur</BaseBadge>
       </DemoBlock>
@@ -32,7 +32,7 @@
           <template #icon><BaseIcon name="check" :size="12" /></template>
           Vérifié
         </BaseBadge>
-        <BaseBadge color="#009adf">
+        <BaseBadge color="#f0669a">
           <template #icon><BaseIcon name="bell" :size="12" /></template>
           Nouveau
         </BaseBadge>
@@ -84,8 +84,8 @@ const variantsCode = `<BaseBadge variant="primary">Primary</BaseBadge>
 <BaseBadge variant="secondary">Secondary</BaseBadge>
 <BaseBadge variant="outline">Outline</BaseBadge>`;
 
-const colorCode = `<BaseBadge color="#009adf">Bleu</BaseBadge>
-<BaseBadge color="#7c2c7e">Violet</BaseBadge>
+const colorCode = `<BaseBadge color="#f0669a">Rose</BaseBadge>
+<BaseBadge color="#9061f0">Violet</BaseBadge>
 <BaseBadge color="#1a7f45">Succès</BaseBadge>
 <BaseBadge color="#b3261e">Erreur</BaseBadge>`;
 

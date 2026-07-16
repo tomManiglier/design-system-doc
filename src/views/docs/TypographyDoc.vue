@@ -116,13 +116,13 @@
             </thead>
             <tbody>
               <tr>
-                <td>Bleu clair</td>
-                <td>#009ADF</td>
+                <td>Rose</td>
+                <td>#F0669A</td>
                 <td>Accent, liens, focus</td>
               </tr>
               <tr>
                 <td>Bleu foncé</td>
-                <td>#005CA9</td>
+                <td>#2B3572</td>
                 <td>Survols, contrastes</td>
               </tr>
               <tr>
