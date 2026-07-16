@@ -61,8 +61,8 @@
 import { computed, ref } from 'vue';
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
-import { BaseAvatar, BaseIcon, BaseInput, BaseItem, BaseSelect } from '@tom/design-system/vue';
-import type { SelectOption } from '@tom/design-system/vue';
+import { BaseAvatar, BaseIcon, BaseInput, BaseItem, BaseSelect } from '@tommaniglier/design-system-lib/vue';
+import type { SelectOption } from '@tommaniglier/design-system-lib/vue';
 
 const query = ref('');
 const role = ref('');

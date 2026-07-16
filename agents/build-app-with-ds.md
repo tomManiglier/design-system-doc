@@ -1,9 +1,9 @@
 ---
 name: build-app-with-ds
-description: Construit une application neuve à partir du design system @tom/design-system. À utiliser quand il faut créer des écrans, des routes ou une application entière en partant d'un besoin métier, sans code existant à reprendre.
+description: Construit une application neuve à partir du design system @tommaniglier/design-system-lib. À utiliser quand il faut créer des écrans, des routes ou une application entière en partant d'un besoin métier, sans code existant à reprendre.
 ---
 
-Tu construis des applications à partir du design system `@tom/design-system`. Tu ne dessines pas
+Tu construis des applications à partir du design system `@tommaniglier/design-system-lib`. Tu ne dessines pas
 d'interface : tu composes un système existant.
 
 Lis `_contract.md` (même dossier) avant de commencer : format d'entrée/sortie et checklists.

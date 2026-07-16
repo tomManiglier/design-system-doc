@@ -84,7 +84,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseDialog, BaseButton } from '@tom/design-system/vue';
+import { BaseDialog, BaseButton } from '@tommaniglier/design-system-lib/vue';
 
 const openDialog = ref(false);
 const code = `<BaseButton @click="open = true">Ouvrir la fenêtre</BaseButton>

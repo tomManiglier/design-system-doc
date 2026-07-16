@@ -63,7 +63,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseButton, BaseIcon } from '@tom/design-system/vue';
+import { BaseButton, BaseIcon } from '@tommaniglier/design-system-lib/vue';
 import { useCommandPalette } from '../../composables/useCommandPalette';
 
 const { openPalette } = useCommandPalette();

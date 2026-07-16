@@ -52,7 +52,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseForm, BaseField, BaseInput, BaseButton } from '@tom/design-system/vue';
+import { BaseForm, BaseField, BaseInput, BaseButton } from '@tommaniglier/design-system-lib/vue';
 
 const name = ref('');
 const email = ref('');

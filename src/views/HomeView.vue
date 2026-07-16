@@ -168,8 +168,8 @@ import {
   BaseSkeleton,
   BaseBreadcrumb,
   BaseSpinner,
-} from '@tom/design-system/vue';
-import type { TabItem, BreadcrumbItem } from '@tom/design-system/vue';
+} from '@tommaniglier/design-system-lib/vue';
+import type { TabItem, BreadcrumbItem } from '@tommaniglier/design-system-lib/vue';
 
 const notifications = ref(true);
 const newsletter = ref(false);

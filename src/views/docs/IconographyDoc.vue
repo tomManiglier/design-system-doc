@@ -110,8 +110,8 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseIcon } from '@tom/design-system/vue';
-import type { IconName } from '@tom/design-system/vue';
+import { BaseIcon } from '@tommaniglier/design-system-lib/vue';
+import type { IconName } from '@tommaniglier/design-system-lib/vue';
 
 const iconCode = `<BaseIcon name="search" />
 <BaseIcon name="bell" />

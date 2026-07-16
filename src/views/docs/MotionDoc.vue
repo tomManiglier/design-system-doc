@@ -75,7 +75,7 @@
 <script setup lang="ts">
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
-import { BaseButton } from '@tom/design-system/vue';
+import { BaseButton } from '@tommaniglier/design-system-lib/vue';
 
 const demoCode = `.element {
   transition: transform var(--duration-base) var(--ease-out-expo);

@@ -2,16 +2,22 @@
   <DocPage
     eyebrow="Démarrer"
     title="Getting Started"
-    description="Installer @tom/design-system et l'utiliser dans une appli Vue, un site Twig/HTML ou du SCSS."
+    description="Installer @tommaniglier/design-system-lib et l'utiliser dans une appli Vue, un site Twig/HTML ou du SCSS."
   >
     <section class="doc-section">
       <h2>Installation</h2>
       <p>
-        Le package est distribué en npm. En attendant le registre privé, il s'installe depuis un
-        tarball généré par <code>npm pack</code> dans le dépôt
-        <code>design-system-lib</code> :
+        Le package est publié sur <strong>GitHub Packages</strong> sous
+        <code>@tommaniglier/design-system-lib</code>. GitHub Packages demande une authentification
+        pour installer un paquet, même public : créer un token d'accès personnel avec le scope
+        <code>read:packages</code> (<code>github.com/settings/tokens</code>), puis indiquer à npm
+        où trouver ce scope avant d'installer.
       </p>
       <DemoBlock :code="installCode" stack />
+      <p>
+        Placer le <code>.npmrc</code> dans <code>~/.npmrc</code> (global) plutôt qu'à la racine du
+        projet évite de committer le token par erreur.
+      </p>
     </section>
 
     <section class="doc-section">
@@ -92,27 +98,28 @@
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 
-const installCode = `# dans design-system-lib
-npm run build && npm pack
+const installCode = `# ~/.npmrc
+@tommaniglier:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=VOTRE_TOKEN_GITHUB
 
-# dans votre projet
-npm install ./tom-design-system-0.1.0.tgz`;
+# puis, dans le projet
+npm install @tommaniglier/design-system-lib`;
 
 const vueCode = `// main.ts
-import '@tom/design-system/styles.css';
+import '@tommaniglier/design-system-lib/styles.css';
 
 // dans un composant
-import { BaseButton, BaseField, BaseInput } from '@tom/design-system/vue';`;
+import { BaseButton, BaseField, BaseInput } from '@tommaniglier/design-system-lib/vue';`;
 
-const twigCode = `import '@tom/design-system/styles.css';   // tokens + reset
-import '@tom/design-system/register.css'; // styles des composants
-import '@tom/design-system/register';     // enregistre les <ds-*>
+const twigCode = `import '@tommaniglier/design-system-lib/styles.css';   // tokens + reset
+import '@tommaniglier/design-system-lib/register.css'; // styles des composants
+import '@tommaniglier/design-system-lib/register';     // enregistre les <ds-*>
 
 // puis, dans le template Twig :
 // <ds-button variant="primary">Valider</ds-button>
 // <ds-alert variant="info" title="Mise à jour">Contenu</ds-alert>`;
 
-const scssCode = `@use '@tom/design-system/scss/tokens.scss' as *;`;
+const scssCode = `@use '@tommaniglier/design-system-lib/scss/tokens.scss' as *;`;
 
 const themeCode = `// à l'initialisation, avant le montage de l'app
 const stored = localStorage.getItem('ds-theme');

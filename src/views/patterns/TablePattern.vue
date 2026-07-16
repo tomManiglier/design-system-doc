@@ -79,8 +79,8 @@ import {
   BaseIcon,
   BaseMenu,
   BasePagination,
-} from '@tom/design-system/vue';
-import type { MenuEntry } from '@tom/design-system/vue';
+} from '@tommaniglier/design-system-lib/vue';
+import type { MenuEntry } from '@tommaniglier/design-system-lib/vue';
 
 const projects = [
   { name: 'Refonte site vitrine', owner: 'Marie Dupont', status: 'En cours' },

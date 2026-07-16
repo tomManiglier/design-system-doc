@@ -55,8 +55,8 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseBreadcrumb } from '@tom/design-system/vue';
-import type { BreadcrumbItem } from '@tom/design-system/vue';
+import { BaseBreadcrumb } from '@tommaniglier/design-system-lib/vue';
+import type { BreadcrumbItem } from '@tommaniglier/design-system-lib/vue';
 
 const items: BreadcrumbItem[] = [
   { label: 'Accueil', to: '/' },

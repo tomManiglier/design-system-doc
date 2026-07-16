@@ -70,8 +70,8 @@ import {
   BaseInput,
   BaseSelect,
   BaseTextarea,
-} from '@tom/design-system/vue';
-import type { SelectOption } from '@tom/design-system/vue';
+} from '@tommaniglier/design-system-lib/vue';
+import type { SelectOption } from '@tommaniglier/design-system-lib/vue';
 
 const name = ref('');
 const owner = ref('');

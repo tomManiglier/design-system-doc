@@ -57,7 +57,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseTooltip, BaseButton } from '@tom/design-system/vue';
+import { BaseTooltip, BaseButton } from '@tommaniglier/design-system-lib/vue';
 
 const code = `<BaseTooltip content="Enregistrer le projet">
   <BaseButton variant="primary">Survolez-moi</BaseButton>

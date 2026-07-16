@@ -61,8 +61,8 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseSelect } from '@tom/design-system/vue';
-import type { SelectOption } from '@tom/design-system/vue';
+import { BaseSelect } from '@tommaniglier/design-system-lib/vue';
+import type { SelectOption } from '@tommaniglier/design-system-lib/vue';
 
 const value = ref('');
 const options: SelectOption[] = [

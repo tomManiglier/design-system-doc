@@ -4,7 +4,7 @@ Ce fichier est référencé par tous les agents de ce dossier. Il n'est pas un a
 
 ## Ressource de référence
 
-Le design system `@tom/design-system` :
+Le design system `@tommaniglier/design-system-lib` :
 
 - **Composants** - 39 composants `Base*` (Vue) / `ds-*` (custom elements). Liste complète dans
   `lib/src/lib/registry.ts` du dépôt `design-system-lib`.
@@ -30,7 +30,7 @@ La documentation complète est le dépôt `design-system-doc` (site de doc).
 - Priorités : <ce qui compte le plus si arbitrage>
 
 ## Ressources
-- Design system : @tom/design-system
+- Design system : @tommaniglier/design-system-lib
 - Codebase : <chemins pertinents, ou "aucune">
 - Données : <schémas, exemples, ou "à inventer">
 ```

@@ -58,7 +58,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseAlert } from '@tom/design-system/vue';
+import { BaseAlert } from '@tommaniglier/design-system-lib/vue';
 
 const code = `<BaseAlert variant="info" title="Information">Une mise à jour est disponible.</BaseAlert>
 <BaseAlert variant="success" title="Succès">Vos modifications ont été enregistrées.</BaseAlert>

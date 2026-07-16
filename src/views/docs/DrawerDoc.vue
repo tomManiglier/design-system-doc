@@ -57,7 +57,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseDrawer, BaseButton } from '@tom/design-system/vue';
+import { BaseDrawer, BaseButton } from '@tommaniglier/design-system-lib/vue';
 
 const open = ref(false);
 

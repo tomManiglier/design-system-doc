@@ -82,7 +82,7 @@ import DemoBlock from '../../components/docs/DemoBlock.vue';
 const frontmatter = `---
 name: build-app-with-ds
 description: Construit une application neuve à partir du design system
-  @tom/design-system. À utiliser quand il faut créer des écrans, des routes
+  @tommaniglier/design-system-lib. À utiliser quand il faut créer des écrans, des routes
   ou une application entière en partant d'un besoin métier, sans code existant.
 ---`;
 </script>

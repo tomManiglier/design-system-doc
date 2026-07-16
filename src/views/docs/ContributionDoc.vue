@@ -9,7 +9,7 @@
       <ul class="doc-list">
         <li><code>design-system-lib</code> - la bibliothèque : composants Vue, custom elements, tokens.</li>
         <li><code>design-system-doc</code> - ce site : une page par composant, les fondations, les patterns.</li>
-        <li>La doc utilise la lib comme n'importe quel projet externe. Après un changement dans la lib, il faut la reconstruire (<code>npm run build &amp;&amp; npm pack --pack-destination ../doc</code>) puis réinstaller côté doc (<code>npm install</code>).</li>
+        <li>La doc consomme <code>@tommaniglier/design-system-lib</code> depuis GitHub Packages, comme n'importe quel projet externe. Après un changement dans la lib : monter la version, <code>npm publish</code>, puis côté doc mettre à jour la dépendance (<code>npm install @tommaniglier/design-system-lib@dernière-version</code>).</li>
       </ul>
     </section>
 

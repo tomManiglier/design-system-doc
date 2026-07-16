@@ -111,7 +111,7 @@ const inputCode = `## Contexte
 - Priorités : <ce qui compte le plus si arbitrage>
 
 ## Ressources
-- Design system : @tom/design-system (composants, tokens, patterns)
+- Design system : @tommaniglier/design-system-lib (composants, tokens, patterns)
 - Codebase : <chemins pertinents, ou "aucune">
 - Données : <schémas, exemples, ou "à inventer">`;
 

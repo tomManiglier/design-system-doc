@@ -55,7 +55,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseSkeleton } from '@tom/design-system/vue';
+import { BaseSkeleton } from '@tommaniglier/design-system-lib/vue';
 
 const code = `<BaseSkeleton width="48px" height="48px" radius="50%" />
 <BaseSkeleton width="180px" />

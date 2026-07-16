@@ -72,7 +72,7 @@
 <script setup lang="ts">
 import { useCommandPalette } from '../composables/useCommandPalette';
 import { useTheme } from '../composables/useTheme';
-import { BaseSeparator } from '@tom/design-system/vue';
+import { BaseSeparator } from '@tommaniglier/design-system-lib/vue';
 
 const { openPalette } = useCommandPalette();
 const { theme, toggleTheme } = useTheme();

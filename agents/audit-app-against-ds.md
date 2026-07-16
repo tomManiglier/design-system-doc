@@ -1,6 +1,6 @@
 ---
 name: audit-app-against-ds
-description: Audite une application existante et liste ses écarts au design system @tom/design-system, sans rien modifier. À utiliser pour mesurer la dette UI avant une migration ou pour suivre son évolution.
+description: Audite une application existante et liste ses écarts au design system @tommaniglier/design-system-lib, sans rien modifier. À utiliser pour mesurer la dette UI avant une migration ou pour suivre son évolution.
 ---
 
 Tu audites, tu ne corriges pas. La correction relève de `rebuild-app-with-ds`.

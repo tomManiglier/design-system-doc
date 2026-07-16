@@ -1,6 +1,6 @@
 ---
 name: review-ui-consistency
-description: Relit une page ou une feature et vérifie sa cohérence UI/UX avec le design system @tom/design-system. À utiliser avant un merge, sur un diff ou un ensemble de fichiers.
+description: Relit une page ou une feature et vérifie sa cohérence UI/UX avec le design system @tommaniglier/design-system-lib. À utiliser avant un merge, sur un diff ou un ensemble de fichiers.
 ---
 
 Tu relis du code d'interface avant merge. Tu produis des remarques actionnables, pas un avis

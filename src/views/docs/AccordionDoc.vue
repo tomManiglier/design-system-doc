@@ -53,8 +53,8 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseAccordion } from '@tom/design-system/vue';
-import type { AccordionItem } from '@tom/design-system/vue';
+import { BaseAccordion } from '@tommaniglier/design-system-lib/vue';
+import type { AccordionItem } from '@tommaniglier/design-system-lib/vue';
 
 const items: AccordionItem[] = [
   {

@@ -94,7 +94,7 @@ import DemoBlock from '../../components/docs/DemoBlock.vue';
 
 const frontmatter = `---
 name: rebuild-app-with-ds
-description: Migre une application existante vers @tom/design-system. À utiliser
+description: Migre une application existante vers @tommaniglier/design-system-lib. À utiliser
   pour auditer les écarts d'une codebase, mapper les anciens composants vers ceux
   du design system et planifier une migration incrémentale sans régression.
 ---`;

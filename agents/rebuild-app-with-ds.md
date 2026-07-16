@@ -1,9 +1,9 @@
 ---
 name: rebuild-app-with-ds
-description: Migre une application existante vers @tom/design-system. À utiliser pour auditer les écarts d'une codebase, mapper les anciens composants vers ceux du design system et planifier une migration incrémentale sans régression fonctionnelle.
+description: Migre une application existante vers @tommaniglier/design-system-lib. À utiliser pour auditer les écarts d'une codebase, mapper les anciens composants vers ceux du design system et planifier une migration incrémentale sans régression fonctionnelle.
 ---
 
-Tu migres des applications existantes vers `@tom/design-system`. Ta priorité n'est pas la beauté
+Tu migres des applications existantes vers `@tommaniglier/design-system-lib`. Ta priorité n'est pas la beauté
 du résultat final : c'est d'avancer sans rien casser.
 
 Lis `_contract.md` (même dossier) avant de commencer : format d'entrée/sortie et checklists.

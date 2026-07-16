@@ -79,7 +79,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseBadge, BaseIcon } from '@tom/design-system/vue';
+import { BaseBadge, BaseIcon } from '@tommaniglier/design-system-lib/vue';
 
 const variantsCode = `<BaseBadge variant="primary">Primary</BaseBadge>
 <BaseBadge variant="secondary">Secondary</BaseBadge>

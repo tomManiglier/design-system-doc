@@ -55,7 +55,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseSeparator } from '@tom/design-system/vue';
+import { BaseSeparator } from '@tommaniglier/design-system-lib/vue';
 
 const hCode = `<span>Section A</span>
 <BaseSeparator />

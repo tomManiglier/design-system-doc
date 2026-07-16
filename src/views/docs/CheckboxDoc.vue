@@ -66,7 +66,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseCheckbox } from '@tom/design-system/vue';
+import { BaseCheckbox } from '@tommaniglier/design-system-lib/vue';
 
 const a = ref(true);
 const code = `<BaseCheckbox v-model="a">Accepter les conditions</BaseCheckbox>`;

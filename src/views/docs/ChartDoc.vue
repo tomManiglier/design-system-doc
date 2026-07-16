@@ -57,7 +57,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseChart } from '@tom/design-system/vue';
+import { BaseChart } from '@tommaniglier/design-system-lib/vue';
 
 const barCode = `<BaseChart
   type="bar"

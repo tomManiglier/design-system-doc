@@ -46,7 +46,7 @@
 <script setup lang="ts">
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
-import { BaseButton, BaseIcon } from '@tom/design-system/vue';
+import { BaseButton, BaseIcon } from '@tommaniglier/design-system-lib/vue';
 
 const firstUseCode = `<div class="empty">
   <BaseIcon name="folder" :size="28" />

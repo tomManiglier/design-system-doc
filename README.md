@@ -1,18 +1,18 @@
 # design-system-docs
 
-Site de documentation du design system `@tom/design-system`, avec recherche (⌘K) et bascule thème clair/sombre.
+Site de documentation du design system `@tommaniglier/design-system-lib`, avec recherche (⌘K) et bascule thème clair/sombre.
 
 - **Démarrer** — introduction, getting started, contribution, changelog.
-- **Fondations** — couleurs, typographie, espacement, grille & layout, bordures & ombres, iconographie, motion, contenu UX.
+- **Fondations** — couleurs, typographie, espacement, grille & layout, bordures & ombres, iconographie, motion.
 - **Composants** — une page par composant : variantes, démos live, états, accessibilité, table de props, statut (`draft` / `beta` / `stable` / `deprecated`).
-- **Patterns** — 9 assemblages réels : formulaire, recherche & filtres, tableau riche, états vides, états d'erreur, confirmation de suppression, Dialog ou Drawer, navigation, feedback.
-- **Agents** — contrat commun, agents de construction et de migration, catalogue et cas de test (définitions dans [`agents/`](agents/)).
+- **Patterns** (`/patterns`) — 6 assemblages réels : formulaire, recherche & filtres, tableau riche, états vides, états d'erreur, notifications & feedback.
+- **Agents** (`/agents`) — contrat commun, agents de construction et de migration, catalogue et cas de test (définitions dans [`agents/`](agents/)).
 
 Ce projet consomme la bibliothèque comme un client externe, en important les composants Vue bruts :
 
 ```ts
-import { BaseButton } from '@tom/design-system/vue';
-import '@tom/design-system/styles.css';
+import { BaseButton } from '@tommaniglier/design-system-lib/vue';
+import '@tommaniglier/design-system-lib/styles.css';
 ```
 
 ## Stack
@@ -22,38 +22,31 @@ import '@tom/design-system/styles.css';
 - Webpack 5 (config `common` / `dev` / `prod`)
 - SCSS (Dart Sass)
 
-## Développement local avec le dépôt de la lib à côté
+## Installer la bibliothèque (GitHub Packages)
 
-Le `package.json` de ce dépôt pointe vers un tarball local du package :
+`@tommaniglier/design-system-lib` est publié sur GitHub Packages, qui exige une authentification
+pour installer un paquet même public. Configurer npm une fois, globalement :
 
-```json
-"@tom/design-system": "file:./tom-design-system-0.1.0.tgz"
+```
+# ~/.npmrc
+@tommaniglier:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<token GitHub avec le scope read:packages>
 ```
 
-Pour régénérer ce tarball depuis `../lib` (nécessaire à chaque changement de composant ou de token) :
-
-```bash
-cd ../lib
-npm run build
-npm pack --pack-destination ../doc
-```
-
-Puis, côté `doc` :
+Puis, dans ce dépôt :
 
 ```bash
 npm install
 ```
 
-Dans un vrai dépôt séparé (sans `../lib` à côté), remplace cette dépendance par :
-
-- une version publiée du registre privé, ou
-- un tarball généré par `npm pack` et commité tel quel (comme actuellement)
+Après un changement dans la lib : monter sa version, `npm publish` depuis `design-system-lib`,
+puis ici `npm install @tommaniglier/design-system-lib@dernière-version`.
 
 ## Scripts
 
 ```bash
 npm install
-npm run dev        # http://localhost:5181 avec hot reload-
+npm run dev        # http://localhost:5181 avec hot reload
 npm run build       # build de production dans dist/
 npm run typecheck   # vue-tsc --noEmit
 npm run serve       # sert dist/ (utilisé par l'image Docker)
@@ -63,9 +56,12 @@ npm run serve       # sert dist/ (utilisé par l'image Docker)
 
 ## Image Docker
 
+Le build a besoin du même token GitHub Packages que l'installation locale, monté comme secret
+BuildKit (jamais copié dans une couche de l'image) :
+
 ```bash
-docker build -t tom-design-system-doc .
-docker run --rm -p 5181:5181 tom-design-system-doc
+DOCKER_BUILDKIT=1 docker build --secret id=npmrc,src=$HOME/.npmrc -t design-system-doc .
+docker run --rm -p 5181:5181 design-system-doc
 ```
 
 L'image construit le site puis sert `dist/` sur le port `5181`.
@@ -73,9 +69,9 @@ Elle est pensée pour être construite et exécutée indépendamment du reste du
 
 ## Ajouter une page
 
-1. Créer la vue dans `src/views/docs/` (composants et fondations) ou `src/views/docs/patterns/`.
+1. Créer la vue dans `src/views/docs/` (composants et fondations), `src/views/patterns/` ou `src/views/agents/`.
 2. Déclarer la route dans `src/router/index.ts`.
-3. Ajouter l'entrée dans `src/components/docs/nav.ts` — source unique de la sidebar **et** de la recherche ⌘K.
+3. Ajouter l'entrée dans `src/components/docs/nav.ts` — source unique de la sidebar **et** de la recherche ⌘K (`docsNav`, `patternsNav` ou `agentsNav` selon la section).
 
 La structure attendue d'une page composant (description, exemples, États, Accessibilité, Props) et les conventions de nommage sont décrites sur la page `Contribution` du site.
 

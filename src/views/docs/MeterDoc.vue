@@ -51,7 +51,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseMeter } from '@tom/design-system/vue';
+import { BaseMeter } from '@tommaniglier/design-system-lib/vue';
 
 const code = `<BaseMeter label="Stockage utilisé" :value="64" />
 <BaseMeter label="Quota API" :value="380" :max="500" :format="(v) => \`\${v} / 500 appels\`" />`;

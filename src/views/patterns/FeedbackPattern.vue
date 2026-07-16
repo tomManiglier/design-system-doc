@@ -102,7 +102,7 @@
 import { onBeforeUnmount, ref } from 'vue';
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
-import { BaseButton, BaseIcon, BaseProgress } from '@tom/design-system/vue';
+import { BaseButton, BaseIcon, BaseProgress } from '@tommaniglier/design-system-lib/vue';
 
 const copied = ref(false);
 let copyTimer: ReturnType<typeof setTimeout> | undefined;

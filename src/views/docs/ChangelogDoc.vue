@@ -8,7 +8,7 @@
       <h2>Juillet 2026</h2>
       <h3>v0.1.0 - première version</h3>
       <ul class="doc-list">
-        <li><strong>Bibliothèque</strong> - 39 composants, utilisables en Vue (<code>@tom/design-system/vue</code>) ou en HTML classique via les custom elements <code>ds-*</code> (<code>/register</code>).</li>
+        <li><strong>Bibliothèque</strong> - 39 composants, utilisables en Vue (<code>@tommaniglier/design-system-lib/vue</code>) ou en HTML classique via les custom elements <code>ds-*</code> (<code>/register</code>).</li>
         <li><strong>Tokens</strong> - couleurs, typographie, espacement, rayons, ombres et animations, en clair et en sombre.</li>
         <li><strong>Documentation</strong> - une page par composant avec démos, code à copier et liste des props ; recherche ⌘K ; thème clair/sombre.</li>
         <li><strong>Fondations</strong> - pages Couleurs, Typographie, Espacement, Grille, Bordures &amp; ombres, Iconographie, Motion.</li>

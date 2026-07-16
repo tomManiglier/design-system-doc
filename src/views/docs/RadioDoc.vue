@@ -58,8 +58,8 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseRadioGroup } from '@tom/design-system/vue';
-import type { RadioOption } from '@tom/design-system/vue';
+import { BaseRadioGroup } from '@tommaniglier/design-system-lib/vue';
+import type { RadioOption } from '@tommaniglier/design-system-lib/vue';
 
 const value = ref('starter');
 const options: RadioOption[] = [

@@ -62,7 +62,7 @@
 <script setup lang="ts">
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
-import { BaseButton, BaseField, BaseIcon, BaseInput } from '@tom/design-system/vue';
+import { BaseButton, BaseField, BaseIcon, BaseInput } from '@tommaniglier/design-system-lib/vue';
 
 const fieldCode = `<BaseField
   label="Adresse e-mail"

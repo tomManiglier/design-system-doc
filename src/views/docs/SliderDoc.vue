@@ -56,7 +56,7 @@ import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 import PropsTable from '../../components/docs/PropsTable.vue';
 import type { PropRow } from '../../components/docs/types';
-import { BaseSlider } from '@tom/design-system/vue';
+import { BaseSlider } from '@tommaniglier/design-system-lib/vue';
 
 const value = ref(40);
 const code = `<BaseSlider v-model="value" :min="0" :max="100" />`;
