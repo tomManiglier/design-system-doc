@@ -76,7 +76,17 @@ const { theme, toggleTheme } = useTheme();
 const navItems: NavigationMenuItem[] = [
   { label: 'Home', to: '/' },
   { label: 'Docs', to: '/docs' },
-  { label: 'Components', to: '/docs/button' },
+  {
+    label: 'Components',
+    links: [
+      { label: 'Formulaires', description: 'Champs, boutons et contrôles de saisie.', to: '/docs/button' },
+      { label: 'Affichage', description: 'Badges, avatars, cartes et indicateurs visuels.', to: '/docs/badge' },
+      { label: 'Feedback', description: 'Alertes, tooltips et boîtes de dialogue.', to: '/docs/alert' },
+      { label: 'Navigation', description: "Onglets, menus, fil d'ariane et pagination.", to: '/docs/tabs' },
+      { label: 'Données', description: 'Tableaux, graphiques et sélecteurs de date.', to: '/docs/table' },
+      { label: 'Utilitaires', description: 'Tiroirs, éléments de liste et raccourcis clavier.', to: '/docs/drawer' },
+    ],
+  },
   { label: 'Patterns', to: '/patterns' },
   { label: 'Agents', to: '/agents' },
 ];
@@ -88,10 +98,11 @@ const kbdLabel = isMac ? '⌘ K' : 'Ctrl K';
 </script>
 
 <style scoped lang="scss">
-nav {
+.navigation {
   height: 64px;
   width: 100%;
   padding: 0 24px;
+  margin-bottom: 24px;
 
   display: flex;
   align-items: center;
