@@ -5,11 +5,8 @@ WORKDIR /app
 # 1. Copie des fichiers de dépendances
 COPY package*.json ./
 
-# 2. Installation des dépendances (mise en cache). @tommaniglier/design-system-lib est publié sur
-# GitHub Packages, qui exige une authentification même pour un paquet public : le token est monté
-# comme secret BuildKit, jamais copié dans une couche de l'image.
-# Build : DOCKER_BUILDKIT=1 docker build --secret id=npmrc,src=$HOME/.npmrc -t design-system-doc .
-RUN --mount=type=secret,id=npmrc,target=/root/.npmrc npm ci
+# 2. Installation des dépendances (mise en cache)
+RUN npm ci
 
 # 3. Copie des fichiers de configuration
 COPY tsconfig.json webpack.common.js webpack.config.js webpack.dev.js webpack.prod.js server.js ./

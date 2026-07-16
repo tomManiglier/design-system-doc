@@ -7,17 +7,10 @@
     <section class="doc-section">
       <h2>Installation</h2>
       <p>
-        Le package est publié sur <strong>GitHub Packages</strong> sous
-        <code>@tommaniglier/design-system-lib</code>. GitHub Packages demande une authentification
-        pour installer un paquet, même public : créer un token d'accès personnel avec le scope
-        <code>read:packages</code> (<code>github.com/settings/tokens</code>), puis indiquer à npm
-        où trouver ce scope avant d'installer.
+        Le package est publié sur <strong>npm</strong> sous
+        <code>@tommaniglier/design-system-lib</code>, installable directement sans configuration :
       </p>
       <DemoBlock :code="installCode" stack />
-      <p>
-        Placer le <code>.npmrc</code> dans <code>~/.npmrc</code> (global) plutôt qu'à la racine du
-        projet évite de committer le token par erreur.
-      </p>
     </section>
 
     <section class="doc-section">
@@ -98,12 +91,7 @@
 import DocPage from '../../components/docs/DocPage.vue';
 import DemoBlock from '../../components/docs/DemoBlock.vue';
 
-const installCode = `# ~/.npmrc
-@tommaniglier:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=VOTRE_TOKEN_GITHUB
-
-# puis, dans le projet
-npm install @tommaniglier/design-system-lib`;
+const installCode = `npm install @tommaniglier/design-system-lib`;
 
 const vueCode = `// main.ts
 import '@tommaniglier/design-system-lib/styles.css';

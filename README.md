@@ -22,18 +22,9 @@ import '@tommaniglier/design-system-lib/styles.css';
 - Webpack 5 (config `common` / `dev` / `prod`)
 - SCSS (Dart Sass)
 
-## Installer la bibliothèque (GitHub Packages)
+## Installation
 
-`@tommaniglier/design-system-lib` est publié sur GitHub Packages, qui exige une authentification
-pour installer un paquet même public. Configurer npm une fois, globalement :
-
-```
-# ~/.npmrc
-@tommaniglier:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=<token GitHub avec le scope read:packages>
-```
-
-Puis, dans ce dépôt :
+`@tommaniglier/design-system-lib` est publié sur [npm](https://www.npmjs.com/package/@tommaniglier/design-system-lib), sans authentification requise :
 
 ```bash
 npm install
@@ -56,11 +47,8 @@ npm run serve       # sert dist/ (utilisé par l'image Docker)
 
 ## Image Docker
 
-Le build a besoin du même token GitHub Packages que l'installation locale, monté comme secret
-BuildKit (jamais copié dans une couche de l'image) :
-
 ```bash
-DOCKER_BUILDKIT=1 docker build --secret id=npmrc,src=$HOME/.npmrc -t design-system-doc .
+docker build -t design-system-doc .
 docker run --rm -p 5181:5181 design-system-doc
 ```
 
