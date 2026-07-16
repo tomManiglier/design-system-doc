@@ -117,7 +117,7 @@
             <tbody>
               <tr>
                 <td>Rose</td>
-                <td>#F0669A</td>
+                <td>#F7A8C4</td>
                 <td>Accent, liens, focus</td>
               </tr>
               <tr>

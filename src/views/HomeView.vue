@@ -188,11 +188,11 @@ const breadcrumbItems: BreadcrumbItem[] = [
 ];
 
 const homeColors = [
-  { name: 'Rose', hex: '#f0669a', light: false },
+  { name: 'Rose', hex: '#f7a8c4', light: true },
   { name: 'Bleu foncé', hex: '#2b3572', light: false },
   { name: 'Anthracite', hex: '#4a4a49', light: false },
-  { name: 'Violet', hex: '#9061f0', light: false },
-  { name: 'Orange', hex: '#ffa45e', light: true },
+  { name: 'Violet', hex: '#6b3fa0', light: false },
+  { name: 'Orange', hex: '#fb7a3c', light: false },
 ];
 
 const copiedHex = ref<string | null>(null);
