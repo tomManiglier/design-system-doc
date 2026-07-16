@@ -1,12 +1,6 @@
 <template>
   <nav class="navigation">
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/docs">Docs</router-link></li>
-      <li><router-link to="/docs/button">Components</router-link></li>
-      <li><router-link to="/patterns">Patterns</router-link></li>
-      <li><router-link to="/agents">Agents</router-link></li>
-    </ul>
+    <BaseNavigationMenu :items="navItems" :link-component="RouterLink" />
 
     <div class="nav-infos">
       <button type="button" class="nav-search" @click="openPalette">
@@ -70,12 +64,22 @@
 </template>
 
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
 import { useCommandPalette } from '../composables/useCommandPalette';
 import { useTheme } from '../composables/useTheme';
-import { BaseSeparator } from '@tommaniglier/design-system-lib/vue';
+import { BaseNavigationMenu, BaseSeparator } from '@tommaniglier/design-system-lib/vue';
+import type { NavigationMenuItem } from '@tommaniglier/design-system-lib/vue';
 
 const { openPalette } = useCommandPalette();
 const { theme, toggleTheme } = useTheme();
+
+const navItems: NavigationMenuItem[] = [
+  { label: 'Home', to: '/' },
+  { label: 'Docs', to: '/docs' },
+  { label: 'Components', to: '/docs/button' },
+  { label: 'Patterns', to: '/patterns' },
+  { label: 'Agents', to: '/agents' },
+];
 
 const isMac =
   typeof navigator !== 'undefined' &&
@@ -92,13 +96,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  ul {
-    display: flex;
-    gap: 20px;
-    font-size: 14px;
-    font-weight: 500;
-  }
 
   .nav-infos {
     display: flex;
