@@ -57,24 +57,19 @@
     <section class="doc-section">
       <h2>Typographies</h2>
       <p>
-        Quicksand pour les titres, Helvetica pour les corps de texte, Roboto en police
-        complémentaire. Voir la page <router-link class="doc-link" to="/docs/typography">Typography</router-link>.
+        Inter pour les titres, Roboto pour les corps de texte. Voir la page
+        <router-link class="doc-link" to="/docs/typography">Typography</router-link>.
       </p>
       <div class="type-grid">
         <div class="type-card">
           <p class="type-card__sample" style="font-family: var(--font-title)">Aa</p>
-          <span class="palette__name">Quicksand</span>
+          <span class="palette__name">Inter</span>
           <code>--font-title · titres</code>
         </div>
         <div class="type-card">
           <p class="type-card__sample" style="font-family: var(--font-body)">Aa</p>
-          <span class="palette__name">Helvetica</span>
-          <code>--font-body · corps</code>
-        </div>
-        <div class="type-card">
-          <p class="type-card__sample" style="font-family: var(--font-roboto)">Aa</p>
           <span class="palette__name">Roboto</span>
-          <code>--font-roboto · complémentaire</code>
+          <code>--font-body · corps</code>
         </div>
       </div>
     </section>

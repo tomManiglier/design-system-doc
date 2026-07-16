@@ -69,8 +69,8 @@
     <section class="doc-section">
       <h2>Polices</h2>
       <p>
-        Le design system attend <strong>Quicksand</strong> (titres) et
-        <strong>Roboto</strong> (complémentaire) ; Helvetica vient du système. Le plus simple
+        Le design system attend <strong>Inter</strong> (titres) et
+        <strong>Roboto</strong> (corps de texte). Le plus simple
         est de passer par Fontsource dans votre application :
       </p>
       <DemoBlock :code="fontsCode" stack />
@@ -117,9 +117,9 @@ document.documentElement.setAttribute(
   stored ?? (prefersDark ? 'dark' : 'light'),
 );`;
 
-const fontsCode = `npm install @fontsource/quicksand @fontsource/roboto
+const fontsCode = `npm install @fontsource/inter @fontsource/roboto
 
 // main.ts
-import '@fontsource/quicksand/700.css';
+import '@fontsource/inter/700.css';
 import '@fontsource/roboto/400.css';`;
 </script>

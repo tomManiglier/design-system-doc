@@ -95,9 +95,9 @@
     <div class="card-grid__col">
       <CardHome label="Typographie">
         <div class="type-specimen">
-          <p class="type-specimen__title">Quicksand</p>
-          <p class="type-specimen__meta">Titres - géométrique arrondie</p>
-          <p class="type-specimen__body">Helvetica</p>
+          <p class="type-specimen__title">Inter</p>
+          <p class="type-specimen__meta">Titres - neutre, pensée pour les interfaces</p>
+          <p class="type-specimen__body">Roboto</p>
           <p class="type-specimen__meta">Corps de texte - sobre et lisible</p>
         </div>
       </CardHome>

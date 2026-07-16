@@ -2,7 +2,7 @@
   <DocPage
     eyebrow="Démarrer"
     title="Typography"
-    description="Styles de texte du design system : titres Quicksand, corps Helvetica, Roboto en complément."
+    description="Styles de texte du design system : titres Inter, corps Roboto."
   >
     <section class="doc-section">
       <h2>H1</h2>
@@ -149,10 +149,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>H1</td><td><code>--text-3xl</code> · Quicksand bold</td><td>Titre de page. Un seul par écran.</td></tr>
-            <tr><td>H2</td><td><code>--text-2xl</code> · Quicksand bold</td><td>Titre de section principale.</td></tr>
-            <tr><td>H3</td><td><code>--text-xl</code> · Quicksand bold</td><td>Sous-section. Ne jamais sauter un niveau.</td></tr>
-            <tr><td>H4</td><td><code>--text-lg</code> · Quicksand medium</td><td>Titre de card ou de panneau.</td></tr>
+            <tr><td>H1</td><td><code>--text-3xl</code> · Inter bold</td><td>Titre de page. Un seul par écran.</td></tr>
+            <tr><td>H2</td><td><code>--text-2xl</code> · Inter bold</td><td>Titre de section principale.</td></tr>
+            <tr><td>H3</td><td><code>--text-xl</code> · Inter bold</td><td>Sous-section. Ne jamais sauter un niveau.</td></tr>
+            <tr><td>H4</td><td><code>--text-lg</code> · Inter medium</td><td>Titre de card ou de panneau.</td></tr>
             <tr><td>Lead</td><td><code>--text-xl</code> · muted</td><td>Chapô sous un H1, une phrase maximum.</td></tr>
             <tr><td>Paragraph</td><td><code>--text-base</code></td><td>Corps de texte par défaut.</td></tr>
             <tr><td>Small / Muted</td><td><code>--text-sm</code></td><td>Labels, aides, métadonnées, légendes.</td></tr>

@@ -3,7 +3,6 @@
     eyebrow="Navigation"
     title="Accordion"
     description="Sections repliables pour présenter du contenu de façon compacte. Une seule ouverte à la fois."
-    status="stable"
   >
     <section class="doc-section">
       <h2>Exemple</h2>
@@ -63,7 +62,7 @@ const items: AccordionItem[] = [
   },
   {
     title: 'Quelles typographies utiliser ?',
-    content: 'Quicksand pour les titres, Helvetica pour les corps de texte.',
+    content: 'Inter pour les titres, Roboto pour les corps de texte.',
   },
   {
     title: 'Puis-je personnaliser les composants ?',
