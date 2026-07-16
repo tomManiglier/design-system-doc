@@ -121,8 +121,8 @@
                 <td>Accent, liens, focus</td>
               </tr>
               <tr>
-                <td>Indigo</td>
-                <td>#2A1442</td>
+                <td>Teal</td>
+                <td>#134E4A</td>
                 <td>Survols, contrastes</td>
               </tr>
               <tr>

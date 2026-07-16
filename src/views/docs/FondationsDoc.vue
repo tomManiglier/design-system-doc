@@ -136,13 +136,13 @@
             </tr>
             <tr>
               <td><code>--color-accent</code></td>
-              <td>#3B1E54</td>
+              <td>#134E4A</td>
               <td>#FADADD</td>
               <td>Accent interactif : liens, éléments actifs, focus.</td>
             </tr>
             <tr>
               <td><code>--color-ring</code></td>
-              <td>#3B1E54</td>
+              <td>#134E4A</td>
               <td>#FADADD</td>
               <td>Anneau de focus clavier, via <code>outline</code>.</td>
             </tr>
@@ -175,12 +175,11 @@ import ColorCard from '../../components/docs/ColorCard.vue';
 const principales = [
   { name: 'Ciel', hex: '#A7E3DD' },
   { name: 'Rose', hex: '#FADADD' },
-  { name: 'Indigo', hex: '#2A1442' },
+  { name: 'Teal', hex: '#134E4A' },
   { name: 'Anthracite', hex: '#333333' },
 ];
 
 const secondaires = [
-  { name: 'Violet', hex: '#3B1E54' },
   { name: 'Orange', hex: '#FF7E5F' },
   { name: 'Pêche', hex: '#FFDAB9' },
 ];
