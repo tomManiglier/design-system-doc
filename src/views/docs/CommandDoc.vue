@@ -1,8 +1,8 @@
 <template>
   <DocPage
-    eyebrow="Navigation"
+    eyebrow="Démarrer"
     title="Command"
-    description="Palette de commandes globale : recherche instantanée dans toute la documentation."
+    description="Fonctionnalité du site de doc (pas un composant de la bibliothèque) : la palette de commandes ⌘K pour rechercher dans toute la documentation."
   >
     <section class="doc-section">
       <h2>Exemple</h2>

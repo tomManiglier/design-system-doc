@@ -136,13 +136,13 @@
             </tr>
             <tr>
               <td><code>--color-accent</code></td>
+              <td>#3B1E54</td>
               <td>#FADADD</td>
-              <td>#FADADD</td>
-              <td>Accent de marque : liens, éléments actifs, focus.</td>
+              <td>Accent interactif : liens, éléments actifs, focus.</td>
             </tr>
             <tr>
               <td><code>--color-ring</code></td>
-              <td>#FADADD</td>
+              <td>#3B1E54</td>
               <td>#FADADD</td>
               <td>Anneau de focus clavier, via <code>outline</code>.</td>
             </tr>

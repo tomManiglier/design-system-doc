@@ -17,6 +17,7 @@ export const docsNav: NavGroup[] = [
       { label: 'Getting Started', to: '/docs/getting-started' },
       { label: 'Contribution', to: '/docs/contribution' },
       { label: 'Changelog', to: '/docs/changelog' },
+      { label: 'Command (⌘K)', to: '/docs/command' },
     ],
   },
   {
@@ -78,7 +79,6 @@ export const docsNav: NavGroup[] = [
       { label: 'Menu', to: '/docs/menu' },
       { label: 'Sidebar', to: '/docs/sidebar' },
       { label: 'Pagination', to: '/docs/pagination' },
-      { label: 'Command', to: '/docs/command' },
     ],
   },
   {

@@ -14,7 +14,7 @@
       </p>
       <p>
         Le style reste sobre : des composants simples et lisibles, avec deux touches de marque -
-        le dégradé bleu&nbsp;→&nbsp;violet et le cercle dégradé.
+        le dégradé rose&nbsp;→&nbsp;violet et le cercle dégradé.
       </p>
     </section>
 
@@ -82,11 +82,6 @@
           </tbody>
         </table>
       </div>
-      <p>
-        Chaque page composant affiche un <strong>statut</strong> (<em>draft</em>, <em>beta</em>,
-        <em>stable</em>, <em>deprecated</em>), expliqué dans
-        <router-link class="doc-link" to="/docs/contribution">Contribution</router-link>.
-      </p>
     </section>
 
     <section class="doc-section">

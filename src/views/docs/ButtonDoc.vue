@@ -20,8 +20,8 @@
     <section class="doc-section">
       <h2>Couleur de la marque</h2>
       <p>
-        <code>brand</code> reprend le bleu de la marque, <code>gradient</code> applique le
-        dégradé signature bleu → violet.
+        <code>brand</code> reprend le rose de la marque, <code>gradient</code> applique le
+        dégradé signature rose → violet.
       </p>
       <DemoBlock :code="brandCode">
         <BaseButton variant="brand">Brand</BaseButton>
@@ -45,7 +45,7 @@
     <section class="doc-section">
       <h2>Lien</h2>
       <p>
-        <code>link</code> et <code>link-black</code> pour une action discrète. Le lien bleu
+        <code>link</code> et <code>link-black</code> pour une action discrète. Le lien coloré
         se souligne au survol ; le lien noir est souligné par défaut et le trait s'efface au
         survol.
       </p>

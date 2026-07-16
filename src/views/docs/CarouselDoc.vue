@@ -9,7 +9,7 @@
       <DemoBlock :code="code" stack>
         <BaseCarousel>
           <div class="slide" style="background: var(--gradient-brand)">Dégradé signature</div>
-          <div class="slide" style="background: var(--gradient-brand-cool)">Dégradé bleu</div>
+          <div class="slide" style="background: var(--gradient-brand-cool)">Dégradé froid</div>
           <div class="slide slide--muted">Contenu libre</div>
         </BaseCarousel>
       </DemoBlock>

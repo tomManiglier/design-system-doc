@@ -28,7 +28,7 @@
       <p>À appliquer systématiquement avant de rendre une sortie :</p>
       <ul class="doc-list">
         <li>Aucune couleur, taille de police, rayon ou durée en dur : uniquement des tokens (<code>--color-*</code>, <code>--space-*</code>, <code>--radius-*</code>, <code>--duration-*</code>).</li>
-        <li>Aucun composant réécrit localement s'il existe dans la bibliothèque (39 composants <code>Base*</code>).</li>
+        <li>Aucun composant réécrit localement s'il existe dans la bibliothèque (40 composants <code>Base*</code>).</li>
         <li>Les espacements sortent de l'échelle en base 4 - pas de <code>margin: 13px</code>.</li>
         <li>Les assemblages suivent les <router-link class="doc-link" to="/patterns/form">patterns</router-link> documentés quand un pattern existe pour le cas.</li>
         <li>Les textes suivent des règles simples : verbes d'action, pas de placeholder qui remplace un label, erreurs qui disent quoi corriger.</li>

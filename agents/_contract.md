@@ -6,13 +6,14 @@ Ce fichier est référencé par tous les agents de ce dossier. Il n'est pas un a
 
 Le design system `@tommaniglier/design-system-lib` :
 
-- **Composants** - 39 composants `Base*` (Vue) / `ds-*` (custom elements). Liste complète dans
+- **Composants** - 40 composants `Base*` (Vue) / `ds-*` (custom elements). Liste complète dans
   `lib/src/lib/registry.ts` du dépôt `design-system-lib`.
 - **Tokens** - `--color-*`, `--space-*` (base 4), `--radius-*`, `--shadow-*`, `--text-*`,
   `--font-*`, `--duration-*`, `--ease-*`.
 - **Patterns** - formulaire, recherche & filtres, tableau riche, états vides, états d'erreur,
-  confirmation de suppression, Dialog vs Drawer, navigation, feedback.
-- **Contenu UX** - règles de rédaction des labels, boutons, placeholders, erreurs, confirmations.
+  notifications & feedback.
+- **Règles éditoriales** - rédaction des labels, boutons, placeholders, erreurs et confirmations,
+  documentées dans la page Typography du site (section « Règles éditoriales »).
 
 La documentation complète est le dépôt `design-system-doc` (site de doc).
 
@@ -68,7 +69,7 @@ demander avant de produire.
 - [ ] Aucun composant réécrit localement s'il existe dans la bibliothèque.
 - [ ] Espacements issus de l'échelle en base 4.
 - [ ] Assemblages conformes aux patterns documentés quand un pattern couvre le cas.
-- [ ] Textes conformes aux règles de contenu UX.
+- [ ] Textes conformes aux règles éditoriales (voir la page Typography).
 - [ ] Toute dérogation listée dans « Manques identifiés » avec justification.
 
 ## Checklist accessibilité minimale
