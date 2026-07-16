@@ -3,8 +3,30 @@
     <aside class="docs__sidebar">
       <nav class="docs__nav">
         <div v-for="group in nav" :key="group.title" class="docs__group">
-          <p class="docs__group-title">{{ group.title }}</p>
-          <ul>
+          <button
+            type="button"
+            class="docs__group-title"
+            :class="{ 'docs__group-title--open': isOpen(group.title) }"
+            :aria-expanded="isOpen(group.title)"
+            @click="toggle(group.title)"
+          >
+            {{ group.title }}
+            <svg
+              class="docs__group-chevron"
+              viewBox="0 0 24 24"
+              width="12"
+              height="12"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <ul v-show="isOpen(group.title)" class="docs__list">
             <li v-for="item in group.items" :key="item.to">
               <router-link class="docs__link" :to="item.to">{{ item.label }}</router-link>
             </li>
@@ -20,9 +42,37 @@
 </template>
 
 <script setup lang="ts">
+import { reactive, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import type { NavGroup } from './docs/nav';
 
-defineProps<{ nav: NavGroup[] }>();
+const props = defineProps<{ nav: NavGroup[] }>();
+const route = useRoute();
+
+function groupTitleForPath(path: string) {
+  return props.nav.find((group) => group.items.some((item) => item.to === path))?.title;
+}
+
+const openGroups = reactive(new Set<string>());
+const initialGroup = groupTitleForPath(route.path);
+if (initialGroup) openGroups.add(initialGroup);
+
+watch(
+  () => route.path,
+  (path) => {
+    const title = groupTitleForPath(path);
+    if (title) openGroups.add(title);
+  },
+);
+
+function isOpen(title: string) {
+  return openGroups.has(title);
+}
+
+function toggle(title: string) {
+  if (openGroups.has(title)) openGroups.delete(title);
+  else openGroups.add(title);
+}
 </script>
 
 <style scoped lang="scss">
@@ -40,25 +90,59 @@ defineProps<{ nav: NavGroup[] }>();
   position: sticky;
   top: 24px;
   align-self: flex-start;
-  padding: 24px 0;
+  padding: 16px 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }
 
-.docs__group + .docs__group {
-  margin-top: 28px;
+.docs__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .docs__group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   font-size: var(--text-xs);
-  font-weight: var(--weight-bold);
-  letter-spacing: 0.06em;
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-muted-foreground);
-  margin: 0 0 10px;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  margin: 0;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: color 0.12s ease;
+
+  &:hover {
+    color: var(--color-foreground);
+  }
+}
+
+.docs__group-chevron {
+  flex: none;
+  transition: transform 0.2s ease;
+}
+
+.docs__group-title--open .docs__group-chevron {
+  transform: rotate(180deg);
+}
+
+.docs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
 }
 
 .docs__link {
   display: block;
-  padding: 6px 12px;
+  padding: 7px 10px;
   font-size: var(--text-sm);
   color: var(--color-muted-foreground);
   border-radius: var(--radius-sm);
@@ -94,7 +178,7 @@ defineProps<{ nav: NavGroup[] }>();
     position: static;
     flex: none;
     width: 100%;
-    padding-bottom: 8px;
+    margin-bottom: 16px;
   }
 }
 </style>
