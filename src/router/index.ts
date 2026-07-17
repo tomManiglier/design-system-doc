@@ -117,7 +117,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(__PUBLIC_PATH__),
   routes,
   scrollBehavior() {
     return { top: 0 };
