@@ -121,8 +121,8 @@
                 <td>Accent, liens, focus</td>
               </tr>
               <tr>
-                <td>Teal</td>
-                <td>#134E4A</td>
+                <td>Nuit</td>
+                <td>#14213D</td>
                 <td>Survols, contrastes</td>
               </tr>
               <tr>

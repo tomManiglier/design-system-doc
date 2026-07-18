@@ -114,6 +114,11 @@ const routes: RouteRecordRaw[] = [
       { path: 'test-cases', component: () => import('../views/agents/AgentTestCasesDoc.vue') },
     ],
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: () => import('../views/NotFoundView.vue'),
+  },
 ];
 
 const router = createRouter({
@@ -122,6 +127,22 @@ const router = createRouter({
   scrollBehavior() {
     return { top: 0 };
   },
+});
+
+// Titre d'onglet par page, dérivé du dernier segment de l'URL
+// (ex. /docs/getting-started → « Getting started — Design System »).
+router.afterEach((to) => {
+  if (to.name === 'not-found') {
+    document.title = 'Page introuvable — Design System';
+    return;
+  }
+  const segment = to.path.split('/').filter(Boolean).pop();
+  if (!segment) {
+    document.title = 'Design System';
+    return;
+  }
+  const label = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
+  document.title = `${label} — Design System`;
 });
 
 export default router;

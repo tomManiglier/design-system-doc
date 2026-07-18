@@ -136,15 +136,39 @@
             </tr>
             <tr>
               <td><code>--color-accent</code></td>
-              <td>#134E4A</td>
+              <td>#14213D</td>
               <td>#FADADD</td>
               <td>Accent interactif : liens, éléments actifs, focus.</td>
             </tr>
             <tr>
               <td><code>--color-ring</code></td>
-              <td>#134E4A</td>
+              <td>#14213D</td>
               <td>#FADADD</td>
               <td>Anneau de focus clavier, via <code>outline</code>.</td>
+            </tr>
+            <tr>
+              <td><code>--color-danger</code></td>
+              <td>#B3261E</td>
+              <td>#B3261E</td>
+              <td>Erreurs, actions destructives, statut « occupé ».</td>
+            </tr>
+            <tr>
+              <td><code>--color-success</code></td>
+              <td>#1A7F45</td>
+              <td>#1A7F45</td>
+              <td>Confirmations, statut « en ligne ».</td>
+            </tr>
+            <tr>
+              <td><code>--color-warning</code></td>
+              <td>#8A6D00</td>
+              <td>#8A6D00</td>
+              <td>Avertissements, états à vérifier.</td>
+            </tr>
+            <tr>
+              <td><code>--color-info</code></td>
+              <td>#005CA9</td>
+              <td>#005CA9</td>
+              <td>Messages informatifs neutres.</td>
             </tr>
           </tbody>
         </table>
@@ -175,7 +199,7 @@ import ColorCard from '../../components/docs/ColorCard.vue';
 const principales = [
   { name: 'Ciel', hex: '#A7E3DD' },
   { name: 'Rose', hex: '#FADADD' },
-  { name: 'Teal', hex: '#134E4A' },
+  { name: 'Nuit', hex: '#14213D' },
   { name: 'Anthracite', hex: '#333333' },
 ];
 

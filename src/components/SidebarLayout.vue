@@ -171,6 +171,9 @@ function toggle(title: string) {
 @media (max-width: 820px) {
   .docs {
     flex-direction: column;
+    // En colonne, l'axe transversal devient horizontal : sans stretch, le contenu
+    // se dimensionne sur son plus large enfant (table de props) et déborde le viewport.
+    align-items: stretch;
     gap: 0;
   }
 

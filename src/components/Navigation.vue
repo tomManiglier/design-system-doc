@@ -210,6 +210,23 @@ const kbdLabel = isMac ? '⌘ K' : 'Ctrl K';
     }
   }
 
+  // Mobile : la barre s'enroule sur plusieurs lignes et la recherche se réduit à son icône
+  @media (max-width: 720px) {
+    height: auto;
+    min-height: 56px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 16px;
 
+    .nav-infos .nav-search {
+      width: auto;
+      padding: 0 10px;
+    }
+
+    .nav-infos .nav-search__label,
+    .nav-infos .nav-search__kbd {
+      display: none;
+    }
+  }
 }
 </style>
