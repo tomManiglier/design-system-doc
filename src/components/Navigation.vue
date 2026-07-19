@@ -88,6 +88,7 @@ const navItems: NavigationMenuItem[] = [
     ],
   },
   { label: 'Patterns', to: '/patterns' },
+  { label: 'Motion Lab', to: '/motion-lab' },
   { label: 'Agents', to: '/agents' },
 ];
 

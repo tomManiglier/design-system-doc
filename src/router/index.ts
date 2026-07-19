@@ -91,6 +91,10 @@ const routes: RouteRecordRaw[] = [
         component: () => import('../views/patterns/SearchFilterPattern.vue'),
       },
       { path: 'table', component: () => import('../views/patterns/TablePattern.vue') },
+      { path: 'settings', component: () => import('../views/patterns/SettingsPattern.vue') },
+      { path: 'wizard', component: () => import('../views/patterns/WizardPattern.vue') },
+      { path: 'dashboard', component: () => import('../views/patterns/DashboardPattern.vue') },
+      { path: 'planning', component: () => import('../views/patterns/PlanningPattern.vue') },
       {
         path: 'empty-states',
         component: () => import('../views/patterns/EmptyStatesPattern.vue'),
@@ -101,6 +105,11 @@ const routes: RouteRecordRaw[] = [
       },
       { path: 'feedback', component: () => import('../views/patterns/FeedbackPattern.vue') },
     ],
+  },
+  {
+    path: '/motion-lab',
+    name: 'motion-lab',
+    component: () => import('../views/MotionLabView.vue'),
   },
   {
     path: '/agents',

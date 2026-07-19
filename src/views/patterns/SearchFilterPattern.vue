@@ -17,15 +17,17 @@
             <BaseSelect v-model="role" :options="roles" placeholder="Tous les rôles" />
           </div>
 
-          <div v-if="role" class="pattern-search__active">
-            <span class="pattern-search__count">{{ filtered.length }} résultat(s)</span>
-            <button type="button" class="pattern-search__chip" @click="role = ''">
-              {{ roleLabel }}
-              <BaseIcon name="close" :size="14" />
-            </button>
-          </div>
+          <Transition name="pattern-fade">
+            <div v-if="role" class="pattern-search__active">
+              <span class="pattern-search__count">{{ filtered.length }} résultat(s)</span>
+              <button type="button" class="pattern-search__chip" @click="role = ''">
+                {{ roleLabel }}
+                <BaseIcon name="close" :size="14" />
+              </button>
+            </div>
+          </Transition>
 
-          <div class="pattern-search__results">
+          <TransitionGroup name="pattern-list" tag="div" class="pattern-search__results">
             <BaseItem
               v-for="m in filtered"
               :key="m.name"
@@ -36,10 +38,10 @@
                 <BaseAvatar :initials="m.initials" />
               </template>
             </BaseItem>
-            <p v-if="!filtered.length" class="pattern-search__empty">
+            <p v-if="!filtered.length" key="empty" class="pattern-search__empty">
               Aucun membre ne correspond à « {{ query }} ». Essayez un autre nom ou retirez un filtre.
             </p>
-          </div>
+          </TransitionGroup>
         </div>
       </DemoBlock>
     </section>
@@ -152,6 +154,7 @@ const code = `<BaseInput v-model="query" placeholder="Rechercher un membre…">
 }
 
 .pattern-search__results {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -163,5 +166,57 @@ const code = `<BaseInput v-model="query" placeholder="Rechercher un membre…">
   padding: 20px 0;
   margin: 0;
   text-align: center;
+}
+
+// Chip de filtre actif : petit fondu + montée à l'apparition/disparition.
+.pattern-fade-enter-active,
+.pattern-fade-leave-active {
+  transition:
+    opacity var(--duration-base) var(--ease-out-expo),
+    transform var(--duration-base) var(--ease-out-expo);
+}
+
+.pattern-fade-enter-from,
+.pattern-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.pattern-fade-leave-active {
+  position: absolute;
+}
+
+// Résultats filtrés : chaque item apparaît/disparaît en douceur et se repositionne
+// (move) quand le filtrage change l'ordre ou la longueur de la liste.
+.pattern-list-enter-active,
+.pattern-list-leave-active {
+  transition:
+    opacity var(--duration-base) var(--ease-out-expo),
+    transform var(--duration-base) var(--ease-out-expo);
+}
+
+.pattern-list-enter-from,
+.pattern-list-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.pattern-list-leave-active {
+  position: absolute;
+  width: 100%;
+}
+
+.pattern-list-move {
+  transition: transform var(--duration-base) var(--ease-out-expo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pattern-fade-enter-active,
+  .pattern-fade-leave-active,
+  .pattern-list-enter-active,
+  .pattern-list-leave-active,
+  .pattern-list-move {
+    transition: none;
+  }
 }
 </style>
